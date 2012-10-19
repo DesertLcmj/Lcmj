@@ -1,0 +1,139 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"	""""""		""""""""	""""""""	""""""""	""	 """	    ""		   "
+"	""	 ""		""			""			""			"""""		 """"""""""    "
+"	""	  ""	""			""			""			""				""         "
+"	""	   ""	""""""""	""""""""	""""""""	""				""         "
+"	""	  ""	""				  ""	""			""				""   ""    "
+"	""	 ""		""				  ""	""			""				""  ""     "
+"	""""""		""""""""	""""""""	""""""""	""				"""""      "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""2012-09-09""
+
+
+""General {
+colorscheme desert
+
+filetype indent on
+filetype plugin indent on
+
+syntax enable
+syntax on
+
+set mouse=a
+
+set history=200
+set spell
+set hidden
+set backup
+
+set fileencoding=utf-8
+set fileencodings=utf-8,gbk,gb2312
+""}
+
+
+""Vim UI {
+set go=
+
+let g:solarized_termtrans=1
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
+
+set guifont=ÐÂËÎÌå:h12
+
+set tabpagemax=15
+set showmode
+
+set cursorline
+
+set ruler
+set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,$c%V\ %p%)
+
+set laststatus=2
+set statusline=%<%f\
+set statusline+=%w%h%m%r
+set statusline+=\ [%{&ff}/%Y]
+set statusline+=\ [%{getcwd()}]
+set statusline+=%=%-14.(%l,%c%V%)\ %p%%
+
+set backspace=indent,eol,start
+set linespace=0
+set number
+set showmatch
+set incsearch
+set hlsearch
+set winminheight=0
+set ignorecase
+set smartcase
+set wildmenu
+set whichwrap=b,s,h,l,<,>,[,]
+set scrolljump=5
+set scrolloff=3
+set foldenable
+"set list
+""}
+
+
+""Formate {
+set nowrap
+set autoindent
+set smartindent
+set shiftwidth=4
+set expandtab
+set tabstop=4
+set pastetoggle=<F12>
+"autocmd FileType c,cpp,java,php,javascript,python,twig,xml,yml
+"autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
+""}
+
+
+""Keymap {
+let mapleader=','
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_
+map <C-L> <C-W>l<C-W>_
+map <C-H> <C-W>h<C-W>_
+
+nnoremap j gj
+nnoremap k gk
+
+map <S-H> gT
+map <S-L> gt
+
+command -nargs=* -complete=file W w <args>
+command -nargs=* -complete=file Q q <args>
+command -nargs=* -complete=file WQ wq <args>
+command -nargs=* -complete=file Wq wq <args>
+cmap Tabe tabe
+
+"nnoremap Y y$
+
+nmap <leader>f0 :set foldlevel=0<CR>
+nmap <leader>f1 :set foldlevel=1<CR>
+nmap <leader>f2 :set foldlevel=2<CR>
+nmap <leader>f3 :set foldlevel=3<CR>
+nmap <leader>f4 :set foldlevel=4<CR>
+nmap <leader>f5 :set foldlevel=5<CR>
+nmap <leader>f6 :set foldlevel=6<CR>
+nmap <leader>f7 :set foldlevel=7<CR>
+nmap <leader>f8 :set foldlevel=8<CR>
+nmap <leader>f9 :set foldlevel=9<CR>
+
+nmap <silent> <leader>/ :nohlsearch<CR>
+
+cmap cwd lcd %:p:h
+cmap cd. lcd %:p:h
+cmap w!! w !sudo tee % >/dev/null
+
+cnoremap %% <C-R>=expand('%:h').'/'<CR>
+map <leader>ew :e %%
+map <leader>es :sp %%
+map <leader>ev :vsp %%
+map <leader>et :tabe %%
+
+vnoremap < <gv
+vnoremap > >gv
+
+map <leader>= <C-w>=
+
+map zl zL
+map zh zH
+""}
