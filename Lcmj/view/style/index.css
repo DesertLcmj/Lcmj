@@ -1,0 +1,106 @@
+/* Lcmj */
+/* Made by Desert */
+/* Build:2012-10-20 */
+/* Final:2012-10-20 */
+
+
+body,ul,li,p,a,img {
+    margin:0px;
+    padding:0px;
+    border:none;
+    font:16px Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin:0px;
+    background:url("../images/lcmj_bg_2.png") scroll;
+}
+ul {
+    list-style:none;
+}
+a {
+    text-decoration:none;
+}
+
+
+/*首页已注释*/
+.head {
+    width:820px;
+    height:30px;
+    border:1px solid #EE00EE;
+}
+
+
+/*导航栏*/
+.nav {
+    margin:0 auto;
+    clear:both;
+    width:100%;
+    height:30px;
+    background:url(../images/nav_bg.png) repeat;
+}
+.nav ul {
+    margin:0px auto;
+    padding:0px;
+    width:820px;
+    height:40px;
+    list-style:none;
+}
+.nav ul li {
+    width:100px;
+    height:30px;
+    float:left;
+    text-align:center;
+    line-height:30px;
+}
+.nav a {
+    display:block;
+    width:80px;
+    margin-top:4px;
+    font:18px Arial, Helvetica, sans-serif;
+    color:#EE00EE;
+}
+.nav a:hover {
+    font-weight:bold;
+    color:#9370DB;
+    background:url(../images/nav_a_hover.png);
+}
+.nav_search {
+    width:120px;
+    height:16px;
+    border:1px solid #EE00EE;
+
+}
+
+
+/*首页主体*/
+.index_content {
+    margin:10px auto;
+    padding:15px;
+    width:820px;
+    clear:both;
+    border:1px solid #EE00EE;
+}
+.index_content p {
+    color:#EE00EE;
+}
+
+
+/*页面版权*/
+.footer {
+    margin:0 auto;
+    width:820px;
+    height:20px;
+    clear:both;
+}
+.footer p {
+    margin:0px;
+    padding:5px;
+    text-align:center;
+    font:14px Arial, Helvetica, sans-serif;
+    color:#9370DB;
+}
+.footer a {
+    font:14px Arial, Helvetica, sans-serif;
+    color:#9370DB;
+}
